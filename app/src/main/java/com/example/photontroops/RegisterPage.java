@@ -110,7 +110,6 @@ public class RegisterPage extends AppCompatActivity {
                                     Log.d(TAG,"onFailure: "+e.toString());
                                 }
                             });
-
                             startActivity(new Intent(getApplicationContext(),MainActivity.class));
 
                         }else{
