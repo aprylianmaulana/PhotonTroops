@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tVHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat datang di Photon Troops!"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:typeface="sans"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/buttonLogOut"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Log Out"
+        android:background="@drawable/transparent_bg_bordered_button"
+        android:layout_below="@id/tVHome"
+        android:layout_marginTop="300dp"/>
+
+</RelativeLayout>
+</ScrollView>

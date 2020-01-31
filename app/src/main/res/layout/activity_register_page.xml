@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+
+    <ImageView
+        android:id="@+id/photonImgRegister"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/photon_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"/>
+
+    <EditText
+        android:id="@+id/editTextNamelRegister"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/photonImgRegister"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Name"/>
+    <EditText
+        android:id="@+id/editTextEmailRegister"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextNamelRegister"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Email Address"/>
+    <EditText
+        android:id="@+id/editTextPwdRegister"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextEmailRegister"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextPwdRegister"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Phone Number"
+        android:inputType="phone"/>
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Sign Up"
+        android:background="@drawable/transparent_bg_bordered_button"
+        android:layout_below="@id/editTextPhone"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/tVRegist1"
+        android:layout_width="165dp"
+        android:layout_height="30dp"
+        android:text="Have an account? Log In "
+        android:layout_below="@id/buttonSignUp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="56dp"/>
+    <TextView
+        android:id="@+id/tVRegist2"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="here. "
+        android:textStyle="bold"
+        android:textColor="@color/colorPhoton"
+        android:layout_below="@id/buttonSignUp"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/tVRegist1"
+        android:layout_marginLeft="157dp"/>
+    <ProgressBar
+        android:id="@+id/pBSignUp"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/buttonSignUp"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/photonFontRegist"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/photon_font"
+        android:layout_below="@id/photonImgRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp"/>
+
+</RelativeLayout>

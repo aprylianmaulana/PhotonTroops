@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+
+    <ImageView
+        android:id="@+id/photonImgLogin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/photon_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/editTextEmailLogin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/photonImgLogin"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Email Address"/>
+    <EditText
+        android:id="@+id/editTextPwdLogin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextEmailLogin"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/buttonLogIn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Log In"
+        android:background="@drawable/transparent_bg_bordered_button"
+        android:layout_below="@id/editTextPwdLogin"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/tVLogin1"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:text="Don't have an account? Sign Up "
+        android:layout_below="@id/buttonLogIn"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="56dp"/>
+    <TextView
+        android:id="@+id/tVLogin2"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="here. "
+        android:textStyle="bold"
+        android:textColor="@color/colorPhoton"
+        android:layout_below="@id/buttonLogIn"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/tVLogin1"
+        android:layout_marginLeft="199dp"/>
+    <ProgressBar
+        android:id="@+id/pBLogin"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/buttonLogIn"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/photonFontLogin"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/photon_font"
+        android:layout_below="@id/photonImgLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp"/>
+
+</RelativeLayout>

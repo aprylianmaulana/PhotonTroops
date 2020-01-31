@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "319894489117",
+    "firebase_url": "https://photon-troops.firebaseio.com",
+    "project_id": "photon-troops",
+    "storage_bucket": "photon-troops.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319894489117:android:98be5b9e7951fe352e9ef4",
+        "android_client_info": {
+          "package_name": "com.example.photontroops"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319894489117-4mduf2v92arhqudk6sqo3ojjon8dng7h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.photontroops",
+            "certificate_hash": "0602908dea885fbfec8f55aad024a0297450cc94"
+          }
+        },
+        {
+          "client_id": "319894489117-jfjgvqee1ebaj3l2e9sghv3m95siog50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEE-QKVgp-RvgEtWoD8jpGwu_KbzT4cjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319894489117-jfjgvqee1ebaj3l2e9sghv3m95siog50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
