@@ -61,16 +61,17 @@ public class LoginPage extends AppCompatActivity {
                 if(password.length()<8){
                     mPassword.setError("At least password should be 8 characters.");
                 }
+                progressBar.setVisibility(View.VISIBLE);
                 //Authentication the user data (email & pass) with the db
                 fAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            progressBar.setVisibility(View.VISIBLE);
                             Toast.makeText(LoginPage.this, "Login Succeed!", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         }else{
                             Toast.makeText(LoginPage.this, "Error! "+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            progressBar.setVisibility(View.GONE);
                         }
                     }
                 });
